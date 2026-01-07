@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project Revou</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="todo-box">
+
+        <h2>Toe-doe List</h2>
+
+        <!-- Input -->
+        <div class="input-area">
+            <input id="taskInput" type="text" placeholder="Tambahkan Tugasmu...">
+            <input id="dateInput" type="date">
+            <button id="addBtn" class="add-btn">+</button>
+        </div>
+
+        <!-- Action -->
+        <div class="action-area">
+            <div class="filter-group">
+                <button data-filter="all" class="filter active">All</button>
+                <button data-filter="pending" class="filter">Pending</button>
+                <button data-filter="done" class="filter">Done</button>
+            </div>
+            <button id="deleteAll" class="delete">Delete All</button>
+        </div>
+
+        <!-- Table -->
+        <div class="table-box">
+            <div class="table-header">
+                <span>Task</span>
+                <span>Due Date</span>
+                <span>Status</span>
+                <span>Actions</span>
+            </div>
+
+        <div class="table-body" id="tableBody">
+            <p>No task found</p>
+        </div>
+
+        </div>
+
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
